@@ -12,17 +12,30 @@
 body {
   font-family: 'Open Sans';
   margin: 0;
+  background-image:
+      linear-gradient(45deg, #9ad4de 25%, transparent 25%), 
+      linear-gradient(135deg, #ccc 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #9ad4de 75%),
+      linear-gradient(135deg, transparent 75%, #ccc 75%);
+    background-size:8px 8px; /* Must be a square */
+    background-position:0 0, 4px 0, 4px -4px, 0px 4px; /* Must be half of one side of the square */
 }
+
+
+
 
 /* Header/Logo Title */
 .header {
   background: #00bbdb;
   color: white;
+  /* position: fixed; */
   font-size: 16px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
+
 
 .button {
   border: none;
@@ -39,24 +52,27 @@ body {
 
 
 /* Page Content */
-.content {padding:20px;}
+.content {padding:50px;}
 </style>
+
+
+
 </head>
 <body>
 
+    <div class="header">
+        <img src="logo.png" alt="ROI-Swift" width="100" height="100">  
+        <button class="button" id = "clientreport" onclick="clientreport()"> Client Report</button>
+        <button class="button" onclick="performancebyaudience()">Performance by Audience</button>
+        <button class="button" onclick="datebrowser()">Date Browser</button>
+        <button class="button" onclick="invdet()">Inventory Details</button>
+        <button class="button" onclick="weekonweek()">Week on Week</button>
+        <button class="button" onclick="salesoverview()">Sales Overview</button>
+        <button class="button" onclick="salesperstate()">Sales per State</button>
+        <button class="button" onclick="keyword()">Keyword</button>
+        <button class="button" onclick="keyworddet()">Keyword Details</button>
+    </div>
 
-<div class="header">
-  <img src="logo.png" alt="ROI-Swift" width="100" height="100">  
-  <button class="button" id = "clientreport" onclick="clientreport()"> Client Report</button>
-  <button class="button" onclick="performancebyaudience()">Performance by Audience</button>
-  <button class="button" onclick="datebrowser()">Date Browser</button>
-  <button class="button" onclick="invdet()">Inventory Details</button>
-  <button class="button" onclick="weekonweek()">Week on Week</button>
-  <button class="button" onclick="salesoverview()">Sales Overview</button>
-  <button class="button" onclick="salesperstate()">Sales per State</button>
-  <button class="button" onclick="keyword()">Keyword</button>
-  <button class="button" onclick="keyworddet()">Keyword Details</button>
-</div>
 
 <center>
     <h1><div id="headername"></div></h1>
@@ -82,7 +98,7 @@ body {
 
     function datebrowser() {
         document.getElementById("headername").innerHTML = 'Date Browser';
-        document.getElementById("iframeDisplay").innerHTML = '<iframe width="1450" height="850" src="https://datastudio.google.com/embed/reporting/992b6b6a-c82b-4c83-9767-d1e3972e43e8/page/p_3hpehjtxnc" frameborder="0" style="border:0" allowfullscreen></iframe>';    
+        document.getElementById("iframeDisplay").innerHTML = '<iframe width="1450" height="850" src="https://datastudio.google.com/embed/reporting/992b6b6a-c82b-4c83-9767-d1e3972e43e8/page/p_48tl1srync" frameborder="0" style="border:0" allowfullscreen></iframe>';    
     }
 
     function invdet() {
