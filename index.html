@@ -76,6 +76,7 @@ body {
         <button class="button" onclick="salesperstate()">Sales per State</button>
         <button class="button" onclick="keyword()">Keyword</button>
         <button class="button" onclick="keyworddet()">Keyword Details</button>
+        <button class="button" onclick="bussrep()">Business Reports</button>
     </div>
 
 
@@ -93,12 +94,12 @@ body {
 
     function clientreport() {
         document.getElementById("headername").innerHTML = 'Client Report';
-        document.getElementById("iframeDisplay").innerHTML = '<iframe width="1200" height="900" src="https://datastudio.google.com/embed/reporting/5bf2fc36-f33a-4feb-b9d9-b379d2d7fc8b/page/Z79aC" frameborder="0" style="border:0" allowfullscreen></iframe>';    
+        document.getElementById("iframeDisplay").innerHTML = '<iframe width="1300" height="900" src="https://datastudio.google.com/embed/reporting/5bf2fc36-f33a-4feb-b9d9-b379d2d7fc8b/page/Z79aC" frameborder="0" style="border:0" allowfullscreen></iframe>';    
     }
 
     function performancebyaudience() {
         document.getElementById("headername").innerHTML = 'Performance by Audience';
-        document.getElementById("iframeDisplay").innerHTML = '<iframe width="1200" height="900" src="https://datastudio.google.com/embed/reporting/cade013b-f3f7-4169-a466-98f03714ad2a/page/p_exh1a35vnc" frameborder="0" style="border:0" allowfullscreen></iframe>';    
+        document.getElementById("iframeDisplay").innerHTML = '<iframe width="1300" height="900" src="https://datastudio.google.com/embed/reporting/cade013b-f3f7-4169-a466-98f03714ad2a/page/p_exh1a35vnc" frameborder="0" style="border:0" allowfullscreen></iframe>';    
     }
 
     function datebrowser() {
@@ -135,6 +136,12 @@ body {
         document.getElementById("headername").innerHTML = 'Week on Week';
         document.getElementById("iframeDisplay").innerHTML = '<iframe width="1200" height="900" src="https://datastudio.google.com/embed/reporting/10391cdf-c44c-4a84-ada2-ac8be03868d4/page/p_2obwtwhwnc" frameborder="0" style="border:0" allowfullscreen></iframe>';    
     }
+  
+    function bussrep() {
+        document.getElementById("headername").innerHTML = 'Business Reports';
+        document.getElementById("iframeDisplay").innerHTML = '<iframe width="1300" height="700" src="https://datastudio.google.com/embed/reporting/7510a8da-a470-4fbc-805f-9980cbb99277/page/LvxbC" frameborder="0" style="border:0" allowfullscreen></iframe>';    
+    }
+
 
     
 </script>      
