@@ -72,7 +72,7 @@ body {
         <button class="button" id = "datebrowser" onclick="datebrowser()">Date Browser</button>
         <button class="button" id = "invdet" onclick="invdet()">Inventory Levels</button>
         <button class="button" id = "weekonweek" onclick="weekonweek()">Week on Week</button>
-        <button class="button" id = "salesoverview" onclick="salesoverview()">Sales Overview</button>
+        <button class="button" id = "salesoverview" onclick="salesoverview()">Weekly Sales Overview</button>
         <button class="button" id = "salesperstate" onclick="salesperstate()">Sales by State</button>
         <button class="button" id = "keyword" onclick="keyword()">Keyword</button>
         <button class="button" id = "keyworddet" onclick="keyworddet()">Keyword Details</button>
@@ -242,7 +242,7 @@ body {
     }
 
     function salesoverview() {
-        document.getElementById("headername").innerHTML = 'Sales Overview';
+        document.getElementById("headername").innerHTML = 'Weekly Sales Overview';
         document.getElementById("iframeDisplay").innerHTML = '<iframe width="1200" height="1200" src="https://datastudio.google.com/embed/reporting/89af28eb-909f-4213-8743-64e41707eac5/page/p_c78471awnc" frameborder="0" style="border:0" allowfullscreen></iframe>';    
        
         document.getElementById("clientreport").style.backgroundColor = "#FFFFFF";
